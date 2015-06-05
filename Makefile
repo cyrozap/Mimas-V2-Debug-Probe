@@ -30,7 +30,7 @@ DEL_CMD   = rm -rI
 # the dependencies.
 
 # project parameters
-DESIGN       := uart_demo
+DESIGN       := debug_probe
 LANGUAGE     := Verilog
 VLG_EXT      := v
 VHDL_EXT     := vhd
@@ -43,10 +43,10 @@ BLD_PATH     := $(TOP_PATH)/build
 
 # The TOP_FILE is either the top HDL file, or a project file (.prj);
 # assumption is that it's placed in the HDL directory.
-TOP_FILE     := $(HDL_PATH)/uart_demo.v
+TOP_FILE     := $(HDL_PATH)/debug_probe.v
 
 CON_FILE     := $(CON_PATH)/mimas_v2.ucf
-TOP_MODULE   := uart_demo
+TOP_MODULE   := debug_probe
 XST_FILE     := $(DESIGN).xstbp
 SYN_BASE      = -top $(TOP_MODULE) \
                 -ifn $(TOP_FILE) \
